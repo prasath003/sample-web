@@ -4,6 +4,7 @@
 
 ## system files
 .DS_Store
+.package-lock.json
 
 ## npm
 /node_modules/
@@ -20,5 +21,6 @@
 /dist/
 /out-tsc/
 /demo-storybook/
+
 
 storybook-static
