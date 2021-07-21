@@ -1,0 +1,104 @@
+{
+  "name": "sample-component",
+  "version": "0.0.0",
+  "description": "Sample project for training.",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "module": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "author": "Prasath Muthaiyan",
+  "contributors": [],
+  "dependencies": {
+    "lit-element": "^2.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@open-wc/demoing-storybook": "^2.0.0",
+    "@open-wc/eslint-config": "^4.2.0",
+    "@open-wc/testing": "^2.2.7",
+    "@web/dev-server": "^0.1.10",
+    "@web/test-runner": "^0.12.18",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^7.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "sinon": "^10.0.0",
+    "standard-version": "^9.0.0"
+  },
+  "scripts": {
+    "start": "web-dev-server --open demo/index.html --node-resolve --watch",
+    "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "test": "web-test-runner \"src/**/*.test.js\" --coverage  --node-resolve",
+    "test:watch": "web-test-runner \"src/**/*.test.js\" --node-resolve --watch",
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook -o demo-storybook && webpack --mode=production",
+    "release": "standard-version"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "printWidth": 100,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "chore",
+        "section": "Other"
+      },
+      {
+        "type": "docs",
+        "section": "Other"
+      },
+      {
+        "type": "style",
+        "hidden": true
+      },
+      {
+        "type": "refactor",
+        "section": "Other"
+      },
+      {
+        "type": "perf",
+        "hidden": true
+      },
+      {
+        "type": "test",
+        "hidden": "Other"
+      }
+    ]
+  }
+}
