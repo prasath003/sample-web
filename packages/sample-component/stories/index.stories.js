@@ -1,5 +1,5 @@
 import { html } from 'lit-element';
-import '../../__element-definitions/sample-component.js';
+import '../../../__element-definitions/sample-component.js';
 
 export default {
   title: 'SampleComponent',
