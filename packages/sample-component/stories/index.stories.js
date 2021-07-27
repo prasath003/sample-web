@@ -6,5 +6,4 @@ export default {
   component: 'sample-component',
 };
 
-export const Demo = () =>
-  html` <sample-component></sample-component> `;
+export const Demo = () => html` <sample-component></sample-component> `;
