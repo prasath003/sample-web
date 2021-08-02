@@ -10,7 +10,7 @@ export class ListComponent extends LitElement {
     return {
       name: { type: String },
       icon: { type: String },
-      date: { type: String },
+      msg: { type: String },
     };
   }
 
@@ -18,7 +18,7 @@ export class ListComponent extends LitElement {
     super();
     this.name = '';
     this.icon = '';
-    this.date = '';
+    this.msg = '';
   }
 
   render() {
@@ -28,7 +28,7 @@ export class ListComponent extends LitElement {
           <img src="${this.icon}" alt="" class="user-img" />
           <div class="person-name">
             <h1 class="persion-name-heading">${this.name}</h1>
-            <p class="person-chat">Bhai Thode Paise Chahiye The...</p>
+            <p class="person-chat">${this.msg}</p>
           </div>
         </div>
         <p class="last-chat-time">12:00 pm</p>

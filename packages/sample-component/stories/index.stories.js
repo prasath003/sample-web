@@ -5,5 +5,9 @@ export default {
   title: 'SampleComponent',
   component: 'sample-component',
 };
-
-export const Demo = () => html` <sample-component></sample-component> `;
+const data = [{
+ 	"name": "Mukesh Ambani",
+ 	"icon": "",
+ 	"msg": "Bhai Thode Paise Chahiye The..."
+ }];
+export const Demo = () => html` <sample-component items=${data}></sample-component> `;
