@@ -1,8 +1,8 @@
 import { LitElement, html } from 'lit-element';
-import {styles} from './SampleComponent.styles.js';
+import { styles } from './ConnnectedComponent.styles.js';
 import '../../__element-definitions/list-component.js';
 
-export class SampleComponent extends LitElement {
+export class ConnectedComponent extends LitElement {
   static get styles() {
     return styles;
   }
@@ -15,9 +15,7 @@ export class SampleComponent extends LitElement {
 
   constructor() {
     super();
-
     this.items = [];
-    console.log(this.items);
   }
 
   render() {
@@ -25,7 +23,6 @@ export class SampleComponent extends LitElement {
   }
 
   renderList() {
-   
     return this.items.map(
       item => html`<list-component name=${item.name} icon=${item.icon}></list-component>`,
     );

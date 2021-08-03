@@ -16,9 +16,9 @@ export class ListComponent extends LitElement {
 
   constructor() {
     super();
-    this.name = '';
-    this.icon = '';
-    this.msg = '';
+    this.name = undefined;
+    this.icon = undefined;
+    this.msg = undefined;
   }
 
   render() {
