@@ -1,1 +1,1 @@
-export { SampleComponent } from './src/SampleComponent.js';
+export { SampleComponent } from './packages/sample-component/SampleComponent.js';
