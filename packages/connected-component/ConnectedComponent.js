@@ -23,6 +23,7 @@ export class ConnectedComponent extends LitElement {
   }
 
   renderList() {
+    
     return this.items.map(
       item => html`<list-component name=${item.name} icon=${item.icon}></list-component>`,
     );
