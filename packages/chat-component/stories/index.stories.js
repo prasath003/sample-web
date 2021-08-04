@@ -8,7 +8,7 @@ export default {
 const messages = [
   {
     id: 'user1',
-    body: 'Hello world',
+    body: 'Hello ',
   },
   {
     id: 'user2',
@@ -16,4 +16,4 @@ const messages = [
   },
 ];
 export const chat = () =>
-  html` <chat-component id=${messages[1].id} body=${messages[1].body}></chat-component> `;
+  html` <chat-component id=${messages[0].id} body=${messages[0].body}></chat-component> `;

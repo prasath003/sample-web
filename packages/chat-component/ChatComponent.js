@@ -21,9 +21,9 @@ export class ChatComponent extends LitElement {
 
   render() {
     return html`
-      <div class="container">
+        <div class="container">
         <div id=${this.id}>${this.body}</div>
-      </div>
+        </div>
     `;
   }
 }

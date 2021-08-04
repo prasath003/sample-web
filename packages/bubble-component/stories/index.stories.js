@@ -9,7 +9,7 @@ export default {
 const messages = [
   {
     id: 'user1',
-    body: 'Hello world',
+    body: 'Hello',
   },
   {
     id: 'user2',
@@ -23,6 +23,14 @@ const messages = [
     id: 'user2',
     body: 'Glad to hear that',
   },
+  {
+    id:'user1',
+    body:'Ok bye!'
+  },
+  {
+    id:'user2',
+    body:'bye bye!'
+  }
 ];
 
 export const Demo = () =>
