@@ -9,16 +9,14 @@ export class ChatComponent extends LitElement {
   static get properties() {
     return {
       name: { type: String },
-      icon: { type: String },
-      date: { type: String },
+      
     };
   }
 
   constructor() {
     super();
     this.name = '';
-    this.icon = '';
-    this.date = '';
+    
   }
 
   render() {
@@ -29,7 +27,6 @@ export class ChatComponent extends LitElement {
         <div class="footer">
           <form>
             <input type="text" name="" />
-
             <button>SEND</button>
           </form>
         </div>

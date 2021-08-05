@@ -35,4 +35,8 @@ export class ListComponent extends LitElement {
       </div>
     `;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 05baef1... feat :chat container

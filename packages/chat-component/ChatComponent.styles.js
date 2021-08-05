@@ -31,21 +31,6 @@ export const styles = css`
     padding: 20px 30px;
   }
 
-  .message {
-    background-color: dodgerblue;
-    padding: 10px;
-    color: white;
-    width: fit-content;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-
-  .user_message {
-    margin-left: auto;
-    background-color: white;
-    color: black;
-  }
-
   .footer form {
     display: flex;
   }

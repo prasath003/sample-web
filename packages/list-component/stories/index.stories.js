@@ -15,4 +15,8 @@ const list = [
 export const Demo = () =>
   html`
     <list-component name=${list[0].name} icon=${list[0].icon} msg=${list[0].msg}></list-component>
+<<<<<<< HEAD
   `;
+=======
+  `;
+>>>>>>> 05baef1... feat :chat container
