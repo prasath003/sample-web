@@ -25,7 +25,10 @@ export class ConnectedComponent extends LitElement {
   renderList() {
     
     return this.items.map(
-      item => html`<list-component name=${item.name} icon=${item.icon}></list-component>`,
+      item => html`<list-component onClick=${this.clickHandler(item.id)} name=${item.name} icon=${item.icon}></list-component>`,
     );
+  }
+  clickHandler(id){
+    console.log(id);
   }
 }

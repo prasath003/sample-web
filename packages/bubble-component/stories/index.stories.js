@@ -24,6 +24,10 @@ const messages = [
     body: 'Glad to hear that',
   },
   {
+    id:'user2',
+    body:'bye bye!'
+  },
+  {
     id:'user1',
     body:'Ok bye!'
   },
@@ -31,6 +35,7 @@ const messages = [
     id:'user2',
     body:'bye bye!'
   }
+
 ];
 
 export const Demo = () =>

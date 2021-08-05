@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { styles } from './ListComponent.styles.js';
+import {mic} from '../assets/index.js';
 
 export class ListComponent extends LitElement {
   static get styles() {
@@ -32,6 +33,7 @@ export class ListComponent extends LitElement {
           </div>
         </div>
         <p class="last-chat-time">12:00 pm</p>
+        <img src="data:image/svg+xml;charset=utf8,${mic}"/>
       </div>
     `;
   }

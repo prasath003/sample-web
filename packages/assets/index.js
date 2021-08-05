@@ -1,0 +1,1 @@
+export {default as mic } from './icons/mic.svg.js';
