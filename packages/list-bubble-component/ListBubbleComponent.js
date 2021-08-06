@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
-import { styles } from './ChatComponent.styles.js';
+import { styles } from './ListBubbleComponent.styles.js';
 
-export class ChatComponent extends LitElement {
+export class ListBubbleComponent extends LitElement {
   static get styles() {
     return styles;
   }

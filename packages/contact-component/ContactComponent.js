@@ -1,0 +1,57 @@
+import { LitElement, html } from 'lit-element';
+import { styles } from './ContactComponent.styles.js';
+import { call, attachment, morevert, leftarrow } from '../assets/index.js';
+
+export class ContactComponent extends LitElement {
+  static get styles() {
+    return styles;
+  }
+
+  static get properties() {
+    return {
+      name: { type: String },
+      time: { type: String },
+      icon:{type:String}
+    };
+  }
+
+  constructor() {
+    super();
+    this.name = undefined;
+    this.time = undefined;
+    this.icon=undefined;
+
+  }
+
+  render() {
+    return html`
+     <div id="container">
+  <div id="header" class="user-bar">
+  <div class="back">
+  <img  src="data:image/svg+xml;charset=utf8,${leftarrow}"  alt=" left arrow" />
+   </div>
+   <div class="avatar">
+     <img  src="${this.icon}" alt="Ambani"/>
+  </div>
+  <div class="name">
+  <span id="name">${this.name}</span>
+  <span class="status">${this.time}</span>
+</div>
+<div class="actions more">
+<img  src="data:image/svg+xml;charset=utf8,${morevert}" alt="threedots"/>
+</div>
+<div class="actions attachment">
+<img  src="data:image/svg+xml;charset=utf8,${attachment}" alt="status"/>
+</div>
+<div  class="actions">
+<img  src="data:image/svg+xml;charset=utf8,${call}" alt="call"/>
+</div>
+</div>
+  </div>
+</div>
+    `;
+  }
+}
+/* <div id="body">
+    
+  </div> */

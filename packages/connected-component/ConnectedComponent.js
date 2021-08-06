@@ -28,7 +28,9 @@ export class ConnectedComponent extends LitElement {
       item => html`<list-component onClick=${this.clickHandler(item.id)} name=${item.name} icon=${item.icon}></list-component>`,
     );
   }
+
   clickHandler(id){
-    console.log(id);
+    // console.log(id);
+     return html`<bubble-component id=${this.id}><bubble-component>`
   }
 }

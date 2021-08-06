@@ -1,4 +1,5 @@
 import {html} from 'lit-element';
+
 export default html`
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="50px" height="50px" viewBox="0 0 96.667 96.666" style="enable-background:new 0 0 96.667 96.666;"

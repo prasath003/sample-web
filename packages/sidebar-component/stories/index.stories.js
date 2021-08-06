@@ -1,11 +1,10 @@
 import { html } from 'lit-element';
-import '../../../__element-definitions/connected-component.js';
+import '../../../__element-definitions/sidebar-component.js';
 
 export default {
-  title: 'ConnectedComponent',
-  component: 'connected-component',
+  title: 'SidebarComponent',
+  component: 'sidebar-component',
 };
-
 const list = [
   {
     name: 'Mukesh Ambani 1',
@@ -21,6 +20,5 @@ const list = [
     id:'02'
   },
 ];
-
-export const Demo = () =>
-  html` <connected-component items="${JSON.stringify(list)}"></connected-component> `;
+export const chat = () =>
+  html` <sidebar-component items="${JSON.stringify(list)}></sidebar-component> `;

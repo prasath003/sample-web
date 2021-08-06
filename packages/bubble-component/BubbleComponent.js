@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { styles } from './BubbleComponent.styles.js';
-import '../../__element-definitions/chat-component.js';
+import '../../__element-definitions/list-bubble-component.js';
 
 export class BubbleComponent extends LitElement {
   static get styles() {
@@ -25,7 +25,7 @@ export class BubbleComponent extends LitElement {
 
   renderList() {
    return this.data.map(
-      item => html`<chat-component id=${item.id} body=${item.body}></chat-component>`,
+      item => html`<list-bubble-component id=${item.id} body=${item.body}></list-bubble-component>`,
     );
   }
 }
