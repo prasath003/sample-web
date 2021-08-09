@@ -2,10 +2,7 @@ import { LitElement, html } from 'lit-element';
 import { Styles } from './HeaderComponent.styles.js';
 import { call, attachment, morevert, leftarrow } from '../assets/index.js';
 
-
-
 export class HeaderComponent extends LitElement {
-
   static get styles() {
     return Styles;
   }
@@ -23,7 +20,6 @@ export class HeaderComponent extends LitElement {
     this.name = undefined;
     this.time = undefined;
     this.icon = undefined;
-
   }
 
   render() {
@@ -31,7 +27,7 @@ export class HeaderComponent extends LitElement {
     <div id="container">
   <div id="header" class="user-bar">
   <div class="back">
-  <img  src="data:image/svg+xml;charset=utf8,${leftarrow}" />
+  <img  src="data:image/svg+xml;charset=utf8,${leftarrow}" alt="leftarrow" />
    </div>
    <div class="avatar">
    <img  src="${this.icon}" alt="Ambani"/>
@@ -41,13 +37,13 @@ export class HeaderComponent extends LitElement {
   <span class="status"> ${this.time}</span>
 </div>
 <div class="actions more">
-<img  src="data:image/svg+xml;charset=utf8,${morevert}" />
+<img  src="data:image/svg+xml;charset=utf8,${morevert}" alt="more" />
 </div>
 <div class="actions attachment">
-<img  src="data:image/svg+xml;charset=utf8,${attachment}"/>
+<img  src="data:image/svg+xml;charset=utf8,${attachment}" alt="attachment"/>
 </div>
 <div  class="actions">
-<img  src="data:image/svg+xml;charset=utf8,${call}"/>
+<img  src="data:image/svg+xml;charset=utf8,${call}" alt="call"/>
 </div>
 </div>
   </div>
@@ -55,6 +51,6 @@ export class HeaderComponent extends LitElement {
     
   </div>
 </div>
-     `
+     `;
   }
 }
