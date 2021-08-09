@@ -25,4 +25,8 @@ export const styles = css`
     font-size: 62.5%;
     position: relative;
   }
+<<<<<<< HEAD
 `;
+=======
+`;
+>>>>>>> 05baef1... feat :chat container
