@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { styles } from './ListBubbleComponent.styles.js';
+import '../../__element-definitions/bubble-component.js';
 
 export class ListBubbleComponent extends LitElement {
   static get styles() {
@@ -8,22 +9,23 @@ export class ListBubbleComponent extends LitElement {
 
   static get properties() {
     return {
-      id: { type: String },
-      body: { type: String },
+      data: { type: Array },
     };
   }
 
   constructor() {
     super();
-    this.id = undefined;
-    this.body = undefined;
+    this.data = [];
   }
 
   render() {
-    return html`
-        <div class="container">
-        <div id=${this.id}>${this.body}</div>
-        </div>
-    `;
+    return html` <div>${this.renderList()}</div> `;
+    
+  }
+
+  renderList() {
+   return this.data.map(
+      item => html`<bubble-component id=${item.id} body=${item.body}></bubble-component>`,
+    );
   }
 }

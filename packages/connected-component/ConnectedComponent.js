@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
 import { styles } from './ConnnectedComponent.styles.js';
 import '../../__element-definitions/list-component.js';
-
+import '../../__element-definitions/list-bubble-component.js';
 export class ConnectedComponent extends LitElement {
   static get styles() {
     return styles;
@@ -25,12 +25,16 @@ export class ConnectedComponent extends LitElement {
   renderList() {
     
     return this.items.map(
-      item => html`<list-component onClick=${this.clickHandler(item.id)} name=${item.name} icon=${item.icon}></list-component>`,
+      item => html`<list-component @click=${()=>this.clickHandler(item.id)} name=${item.name} icon=${item.icon}></list-component>`,
+       
     );
   }
 
   clickHandler(id){
-    // console.log(id);
-     return html`<bubble-component id=${this.id}><bubble-component>`
+    console.log(id);
+    console.log("this is clicked");
+     
+    return html`<list-bubble-component></list-bubble-component>`
+   
   }
 }

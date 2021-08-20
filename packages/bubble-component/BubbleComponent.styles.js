@@ -1,87 +1,42 @@
 import { css } from 'lit-element';
 
 export const styles = css`
-  #container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #e7dfdc;
-    flex-direction: column;
-  }
-  #header {
-    min-height: 67px;
-    background-color: #eeeeee;
-    box-shadow: 2px 0px 4px #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
-    padding: 20px 50px;
-    overflow: scroll;
-  }
-  .message {
-    margin-top: 10px;
-    display: flex;
-    align-items: flex-start;
-    color: #767676;
-    flex-direction: column;
-  }
-  .message .messageContent {
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  /* .message {
-  flex-direction: column;
-  display: flex;
-  align-items: flex-start;
-} */
-  .message.me .messageContent {
-    background-color: #dcf7c5;
-    align-items: flex-end;
-  }
+  
 
-  #footer {
-    min-height: 67px;
-    background-color: #f0eeed;
-    display: flex;
+
+  .container {
+    background-color: hsl(43deg 32% 83%);
   }
-  #smileyIcon {
-    flex-basis: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #textarea {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
-  #ta {
-    width: 100%;
-    height: 45px;
-    border: 0px;
-    border-radius: 4px;
-    resize: none;
+  #text {
+    width: 95%;
     outline: none;
-    padding: 14px;
-    font-family: sans-serif;
-    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-left: 10px;
   }
-  #micIcon {
-    flex-basis: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #user1 {
+    padding: 10px;
+    float: left;
+    margin: 5px;
+    max-width: 90%;
+    display: table;
+    clear: both;
+    margin-left: 15px;
+    background-color: #edefed;
+    border-radius: 10px;
   }
-  #micIcon img,
-  #smileyIcon img {
-    max-width: 60%;
-    cursor: pointer;
+  #user2 {
+    padding: 10px;
+    float: right;
+    max-width: 70%;
+    background-color: hsl(88deg 94% 86%);
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    margin-right: 15px;
+    display: table;
+    clear: both;
   }
 `;
