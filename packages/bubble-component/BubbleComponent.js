@@ -1,6 +1,5 @@
 import { LitElement, html } from 'lit-element';
 import { styles } from './BubbleComponent.styles.js';
-import '../../__element-definitions/chat-component.js';
 
 export class BubbleComponent extends LitElement {
   static get styles() {
